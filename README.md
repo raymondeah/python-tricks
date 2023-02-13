@@ -24,6 +24,7 @@ Output: 3
 </tr>
 <tr>
 <td>
+
 ```python
 nums = [1, 2, 3]
 n = len(nums)
@@ -31,6 +32,7 @@ last = nums[n-1]
 ```
 </td>
 <td>
+
 ```json
 {
   "id": 5,
