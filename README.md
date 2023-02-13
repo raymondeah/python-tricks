@@ -3,19 +3,6 @@
 ## Lists
 
 #### 1. Negative indexing
-```python
-nums = [1, 2, 3]
-n = len(nums)
-last = nums[n-1]
-print(last)
-```
-Output: 3
-
-```python
-nums = [1, 2, 3]
-last = nums[-1]
-```
-Output: 3
 
 <table>
 <tr>
@@ -30,17 +17,16 @@ nums = [1, 2, 3]
 n = len(nums)
 last = nums[n-1]
 ```
+Output: 3
+
 </td>
 <td>
 
-```json
-{
-  "id": 5,
-  "username": "mary",
-  "email": "mary@example.com",
-  "order_id": "f7177da"
-}
+```python
+nums = [1, 2, 3]
+last = nums[-1]
 ```
+Output: 3
 
 </td>
 </tr>
