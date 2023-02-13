@@ -32,7 +32,7 @@ List comprehensions are a concise way to create lists.
 ```python
 squares = [i*i for i in range(5)] # [0, 1, 4, 9, 16]
 ```
-comprehensions with conditional logic
+Comprehensions with conditional logic:
 ```python
 prices = [1.99, 15.50, 7.00, 2.50, 21.69]
 squares = [p for p in prices if p < 10] # [1.99, 7.00, 2.50]
@@ -40,7 +40,7 @@ squares = [p for p in prices if p < 10] # [1.99, 7.00, 2.50]
 nums = [5, 7, 4, 8, 1, 9, 2]
 evens = [n for n in nums if n % 2 == 0] # [4, 8, 2]
 ```
-Nested comprehensions
+Nested comprehensions:
 ```python
 matrix = [[i for i in range(3)] for _ in range(3)] # [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
 ```
@@ -123,7 +123,7 @@ dict3 = {**dict1, **dict2} # {'a': 10, 'b': 14, 'c': 4}
 
 ## Iteration
 
-#### 1. unpacking
+#### 1. Unpacking
 Elements of lists and tuples can be unpacked directly in the header of a for loop.
 ```python
 inventory = [['rice', 5.00, 100], ['milk', 3.50, 75], ['bread', 6.99, 200]]
