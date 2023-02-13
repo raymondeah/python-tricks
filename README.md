@@ -17,7 +17,7 @@ trues = [True] * 5 # [True, True, True, True, True]
 apples = ['apple'] * 5 # ['apple', 'apple', 'apple', 'apple', 'apple']
 ```
 
-#### 3. Slicing
+### 3. Slicing
 Lists can be sliced with the slice operator (:). The index to begin including elements (inclusive) goes on the left side of the colon and the index to end including elements (non-inclusive) goes on the right side of the colon.
 ```python
 nums = [1, 2, 3, 4, 5, 6]
@@ -27,7 +27,7 @@ right_half = nums[3:] # [4, 5, 6]
 middle_two = nums[2:4] # [3, 4]
 ```
 
-#### 4. List comprehensions
+### 4. List comprehensions
 List comprehensions are a concise way to create lists. 
 ```python
 squares = [i*i for i in range(5)] # [0, 1, 4, 9, 16]
@@ -48,14 +48,14 @@ matrix = [[i for i in range(3)] for _ in range(3)] # [[0, 1, 2], [0, 1, 2], [0, 
 
 ## Strings
 
-#### 1. Reversing strings
+### 1. Reversing strings
 Strings can be reversed by using the third argument of the slicing operator. -1 indicates to reconstruct the string by stepping backwards from the end.
 ```python
 txt = 'Hello World'
 txt_reversed = txt[::-1] # 'dlroW olleH'
 ```
 
-#### 2. Split
+### 2. Split
 The split method splits strings on every instance of the supplied sequence into a list.
 ```python
 txt = 'You thought I was feeling you?'
@@ -65,7 +65,7 @@ food = 'eggs,milk,butter,sugar'
 ingredients = food.split(',') # ['eggs', 'milk', 'butter', 'sugar']
 ```
 
-#### 3. Join
+### 3. Join
 The join method joins a list of strings together, placing the supplied sequence in between each string.
 ```python
 scrambled = ['re', 'cur', 'sion']
@@ -79,7 +79,7 @@ food = ','.join(ingredients) # 'eggs,milk,butter,sugar'
 ```
 
 
-#### 4. F-strings
+### 4. F-strings
 Strings can be easily formatted using f-strings.
 ```python
 name = 'Ray'
@@ -90,7 +90,7 @@ greeting = f'Hello, {name}. You are {age} years old.' # 'Hello, Ray. You are 21 
 
 ## Dictionaries
 
-#### 1. Defaultdict
+### 1. Defaultdict
 The collection module's defaultdict offers a helpful syntactic sugar for dictionaries. The empty case is automatically detected and handled by the supplied default object. 
 ```python
 from collections import defaultdict
@@ -113,7 +113,7 @@ for u, v in edges:
   adjacency_list[u].append(v)
 ```
 
-#### 2. Merging dictionaries
+### 2. Merging dictionaries
 Dictionaries can be easily merged using **.
 ```python
 dict1 = {'a': 10, 'b': 8}
@@ -123,7 +123,7 @@ dict3 = {**dict1, **dict2} # {'a': 10, 'b': 14, 'c': 4}
 
 ## Iteration
 
-#### 1. Unpacking
+### 1. Unpacking
 Elements of lists and tuples can be unpacked directly in the header of a for loop.
 ```python
 inventory = [['rice', 5.00, 100], ['milk', 3.50, 75], ['bread', 6.99, 200]]
@@ -132,7 +132,7 @@ for item, price, quantity in inventory:
   print(item, price, quantity)
 ```
 
-#### 2. Enumerate
+### 2. Enumerate
 The enumerate function is helpful when you are iterating through a list and need access to both the index as well as the element at the current index.
 ```python
 letters = ['a', 'b', 'c']
@@ -141,7 +141,7 @@ for i, letter in enumerate(letters):
   print(i, letter)
 ```
 
-#### 3. Zip
+### 3. Zip
 The zip function is helpful when you need to iterate through two or more lists in parallel.
 ```python
 students = ['Ray', 'Sid', 'Bob']
@@ -153,7 +153,7 @@ for student, grade in zip(students, grades):
 
 ## Misc
 
-#### 1. Swapping variables
+### 1. Swapping variables
 You can swap variables without using a temporary variable using this one-line trick.
 ```python
 a = 10
@@ -162,7 +162,7 @@ b = 7
 a, b = b, a
 ```
 
-#### 2. not operator
+### 2. not operator
 The not operator returns True for "falsy" values, such as False, 0, and empty lists, tuples, dictionaries, and strings.
 ```python
 a = False
@@ -175,7 +175,7 @@ f = 0
 print((not a) and (not b) and (not c) and (not d) and (not e) and (not f)) # True
 ```
 
-#### 3. Counter
+### 3. Counter
 Counter from the collections module is a Pythonic way to count frequencies of objects.
 ```python
 from collections import Counter
