@@ -18,7 +18,6 @@ n = len(nums)
 last = nums[n-1]
 print(last)
 ```
-Output: 3
 
 </td>
 <td>
@@ -28,12 +27,11 @@ nums = [1, 2, 3]
 last = nums[-1]
 print(last)
 ```
-Output: 3
 
 </td>
 </tr>
 <tr>
-<td>Output: 3</td>
+<td colspan="2">Output: 3</td>
 </tr>
 </table>
 
